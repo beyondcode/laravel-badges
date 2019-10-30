@@ -1,0 +1,44 @@
+{
+    "name": "beyondcode/laravel-badges",
+    "description": "Create badges in your Laravel application",
+    "keywords": [
+        "beyondcode",
+        "laravel-badges"
+    ],
+    "homepage": "https://github.com/beyondcode/laravel-badges",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "marcel@beyondco.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beyondcode\\LaravelBadges\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beyondcode\\LaravelBadges\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
